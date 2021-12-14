@@ -1,5 +1,8 @@
 html{
     background-color: #2E2E2E;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 body{
     margin: 0;
@@ -24,19 +27,44 @@ body{
     margin-top: 247px;
     margin-bottom: 40px;
 }
-.container{
+.white-keys{
     display: flex;
+    z-index: 1;
     justify-content: center;
     text-align: center;
     margin: 0 370px;
+    font-size: 18px;
 }
-kbd{
+.white-keys kbd{
     display: inline-block;
-    background-color: #F4F4F4;
     width: 100px;
     height: 300px;
+    padding-top: 270px;
+    color: #1F1F1F;
+    background-color: #F4F4F4;
     border: 1px solid #2E2E2E;
     box-sizing: border-box;
+}
+.black-keys{
+    position: absolute;
+    display: flex;
+    width: 550px;
+    top: 362px;
+    z-index: 2;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 18px;
+}
+.black-keys kbd{
+    display: inline-block;
+    width: 50px;
+    height: 200px;
+    background: #1F1F1F;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F4F4F4;
+}
+.hidden-key{
+    opacity: 0;
 }
 .links{
     margin-top: 21px;
@@ -44,18 +72,17 @@ kbd{
     width: 700px;
     text-align: left;
     display: flex;
-
 }
 .git-link{
     text-decoration: none;
 }
 .signature{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 12px;
     line-height: 14px;
     color: #17C6FE;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: auto;
+}
+kbd:active{
+    background-color: #17C6FE;
 }

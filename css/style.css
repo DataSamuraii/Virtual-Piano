@@ -83,6 +83,36 @@ body{
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: auto;
 }
-kbd:active{
-    background-color: #17C6FE;
+.slide-bottom{
+    -webkit-animation: slide-bottom 0.5s backwards;
+    animation: slide-bottom 0.5s backwards;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }

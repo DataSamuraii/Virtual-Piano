@@ -1,4 +1,4 @@
 # Virtual-Piano 
-JetBrains Frontend Developer course
+## JetBrains Frontend Developer course
 
-## Completed by Alex Rubashanov
+Completed by Alex Rubashanov
